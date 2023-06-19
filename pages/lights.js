@@ -1,7 +1,7 @@
 import Link from "../components/Link";
 import Lights from "../components/Lights";
 
-export default function Rooms({ lights, onHandleToggle, allLights, isOn }) {
+export default function Rooms({ lights, onHandleToggle, allLights }) {
   return (
     <>
       <Link href="/">← Back home</Link>

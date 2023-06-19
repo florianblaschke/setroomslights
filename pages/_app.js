@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
       allLights.map((light) => (light.isOn ? { ...light, isOn: false } : light))
     );
   }
-  function activateAll() {
+  function lightAll() {
     setAllLights(
       allLights.map((light) => (!light.isOn ? { ...light, isOn: true } : light))
     );
@@ -48,7 +48,7 @@ export default function App({ Component, pageProps }) {
         allLights={allLights}
         onHandleToggle={handleToggle}
         killAll={killAll}
-        activateAll={activateAll}
+        activateAll={lightAll}
         {...pageProps}
       />
     </Layout>
