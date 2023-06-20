@@ -41,7 +41,7 @@ export default function App({ Component, pageProps }) {
   );
 
   return (
-    <Layout>
+    <Layout isDimmed={lit === 0 ? true : false}>
       <GlobalStyle />
       <Component
         lit={lit}
